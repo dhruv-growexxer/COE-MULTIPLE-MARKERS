@@ -1,5 +1,8 @@
+@import "~antd/dist/antd.css";
 .App {
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .App-logo {
@@ -35,4 +38,40 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.map {
+  height: 100vh;
+  width: 100%;
+}
+
+.marker {
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  background-image: url("https://i.imgur.com/oz3r3Wq.png");
+}
+
+.restaurant-marker {
+  background-size: cover;
+  width: 22px;
+  height: 22px;
+  background-image: url("./components/Map/restaurant.png");
+}
+
+.example {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.error-display {
+  display: none;
+}
+
+.search-bar {
+  text-align: center;
+  padding-right: 200px;
 }
